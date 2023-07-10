@@ -1,5 +1,6 @@
 (function () {
     [...document.querySelectorAll(".control")].forEach(button => {
+        console.log(button)
         button.addEventListener("click", function() {
             document.querySelector(".active-btn").classList.remove("active-btn");
             this.classList.add("active-btn");
